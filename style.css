@@ -1,3 +1,5 @@
+
+
 * {
     padding: 0;
 
@@ -9,10 +11,268 @@
 
 
 .container-grid {
-    
-    width: 80vw;
+
+    width: 1080px;
 
     max-width: 1400px;
 
-    margin: 0 auto;
+    margin: 60px auto 0px auto;
+
+    
+}
+
+#navegacao {
+
+    display: flex;
+
+    justify-content: center;
+    
+}
+
+.menu {
+    width: 860px;
+
+    display: flex;
+
+    justify-content: space-between;
+    
+}
+
+#botaoSobre,#botaoPortfolio,#botaoContato {
+    background-color: white;
+
+    border: solid 1px black;
+
+    width: 28%;
+
+    height: 50px;
+
+    font-size: 16px;
+
+    font-family: "Oswald", sans-serif;
+
+    transition: 750ms;
+}
+
+#botaoSobre:hover,#botaoPortfolio:hover,#botaoContato:hover,#sobreMim:hover,#hobbies:hover,#objetivos:hover {
+    background-color: #151519;
+
+    border: solid 1px wheat;
+
+    color: white;
+
+    font-size: 16px;
+
+    animation: letrasEspaco 750ms ease normal;
+
+    letter-spacing: 10px;
+
+}
+
+#sobreMim:hover,#hobbies:hover,#objetivos:hover {
+    border: solid 1px black;
+}
+
+@keyframes letrasEspaco {
+    0% {
+        letter-spacing: 0px;
+    }
+
+    100% {
+        letter-spacing: 10px;
+    }
+}
+
+#botaoSobre {
+    border-radius: 20px 0px 0px 20px;
+}
+
+#botaoPortfolio {
+    border-radius: 0px 0px 0px 0px;
+}
+
+#botaoContato {
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* LEMBRA DE COLOCAR OS DETALHES NA BARRA DE NAVEGAÇÃO*/
+
+#caixa-conteudo {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.titulos {
+
+    width: 800px;
+
+    display: flex;
+
+    flex-direction: column;
+    
+    align-items: center;
+
+    font-family: "Oswald", sans-serif;
+}
+
+#subtitulo {
+    font-size: 12px;
+}
+
+#tituloTopico {
+    font-size: 40px;
+}
+
+.conteudo {
+
+    width: 800px;
+
+    height: 300px;
+
+    margin: 60px auto;
+}
+
+
+.sobre,.projetos {
+    height: 300px;
+
+    font-family: "Oswald", sans-serif;
+}
+
+.assuntos {
+    height: 50px;
+
+    display: flex;
+
+    justify-content: space-around;
+    
+}
+
+#sobreMim,#hobbies,#objetivos {
+    background-color: white;
+
+    border: solid 1px black;
+
+    width: 33.33333333333%;
+
+    font-family: "Oswald", sans-serif;
+
+    transition: 750ms;
+}
+
+#sobreMim {
+    border-radius: 20px 0px 0px 0px;
+}
+
+#objetivos {
+    border-radius: 0px 20px 0px 0px;
+
+    width: 34.33333333333%;
+}
+
+
+.texto {
+    height: 250px;
+
+    border: solid 1px black;
+
+    border-radius: 0px 0px 20px 20px;
+
+    font-size: 18px;
+
+    padding: 10px;
+
+    line-height: 28px;
+
+    text-align: justify;
+}
+
+.projetos {
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+.imagemProjetos,.textoProjetos {
+
+    height: 300px;
+
+    border: 1px solid black;
+
+    border-radius: 20px;
+}
+
+.imagemProjetos {
+    width: 250px;
+}
+
+.textoProjetos {
+    width: 500px;
+
+    font-size: 18px;
+
+    padding: 10px;
+
+    line-height: 28px;
+
+    text-align: justify;
+}
+
+.meuContato {
+    width: 800px;
+
+    height: 300px;
+}
+
+.iconesContatos {
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.iconesContatos a {
+    width: 125px;
+
+    height: 125px;
+
+    border: 4px solid black;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.iconesContatos svg {
+    width: 100px;
+
+    height: 100px;
+
+    border-radius: 50px;
+}
+
+.nomeDosIcones {
+    width: 800px;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    margin-top: 10px;
+}
+
+.nomeDosIcones p {
+    width: 104px;
+
+    text-align: center;
+
+    font-family: "Oswald", sans-serif;
 }

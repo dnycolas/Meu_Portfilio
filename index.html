@@ -1,26 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Nycolas</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div class="portfolio">
+    <header>
 
-        <div class="container-grid">
+
+        <div class="container-grid" id="navegacao">
+
             <nav class="menu">
-                <a href="">SOBRE</a>
-                <a href="">PORTFÓLIO</a>
-                <a href="">CONTATO</a>
+                <button id="botaoSobre" onclick="myFunction()">SOBRE</button>
+                <button id="botaoPortfolio">PORTFÓLIO</button>
+                <button id="botaoContato">CONTATO</button>
             </nav>
+
         </div>
 
-    </div>
+
+    </header>
+
+    <section class="container-grid" id="caixa-conteudo">
+
+
+
+        <div class="titulos">
+            <h4 id="subtitulo">PORTFÓLIO DO:</h4>
+            <h2 id="tituloTopico">DAVID NYCOLAS</h2>
+        </div>
+
+        <div class="conteudo">
+
+            <div class="sobre" style="display: inline;">
+
+                <div class="assuntos">
+                    <button id="sobreMim">SOBRE</button>
+                    <button id="hobbies">HOBBIES</button>
+                    <button id="objetivos">OBJETIVO</button>
+                </div>
+
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus quis lorem quis commodo.
+                        Curabitur auctor scelerisque semper. Proin convallis, elit at semper sodales, risus odio aliquam
+                        est, pellentesque maximus nisl neque ac dui. Ut sit amet mattis diam. Nulla a leo lacinia,
+                        malesuada quam nec, consequat dui. Cras pulvinar lectus id mauris fermentum, a lobortis ipsum
+                        consectetur. Nulla facilisi. In at consequat nulla. Fusce euismod fermentum mollis. Etiam
+                        blandit pharetra elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                        fames ac turpis egestas. Praesent venenatis posuere nisi. Fusce vestibulum ligula a lacinia
+                        vulputate.</p>
+                </div>
+
+            </div>
+
+            <div class="caixaProjetos" style="display: none;">
+                <div class="projetos">
+
+                    <div class="imagemProjetos"></div>
+
+                    <div class="textoProjetos">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus quis lorem quis commodo.
+                            Curabitur auctor scelerisque semper. Proin convallis, elit at semper sodales, risus odio
+                            aliquam
+                            est, pellentesque maximus nisl neque ac dui. Ut sit amet mattis diam. Nulla a leo lacinia,
+                            malesuada quam nec, consequat dui. Cras pulvinar lectus id mauris fermentum, a lobortis
+                            ipsum
+                            consectetur. Nulla facilisi. In at consequat nulla. Fusce euismod fermentum mollis. Etiam
+                            blandit pharetra elementum.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meuContato" style="display: none;">
+
+                <div class="iconesContatos">
+
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Gmail" role="img" viewBox="0 0 512 512">
+                            <rect width="512" height="512" rx="15%" fill="#ffffff" />
+                            <path d="M158 391v-142l-82-63V361q0 30 30 30" fill="#4285f4" />
+                            <path d="M 154 248l102 77l102-77v-98l-102 77l-102-77" fill="#ea4335" />
+                            <path d="M354 391v-142l82-63V361q0 30-30 30" fill="#34a853" />
+                            <path d="M76 188l82 63v-98l-30-23c-27-21-52 0-52 26" fill="#c5221f" />
+                            <path d="M436 188l-82 63v-98l30-23c27-21 52 0 52 26" fill="#fbbc04" />
+                        </svg>
+                    </a>
+
+                    <a href="#">
+                        <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <title>github [#142]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)"
+                                    fill="#000000">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                            id="github-[#142]">
+
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <a href="#">
+                        <svg width="800px" height="800px" viewBox="0 0 48 48" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <title>Whatsapp-color</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs>
+
+                            </defs>
+                            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Color-" transform="translate(-700.000000, -360.000000)" fill="#67C15E">
+                                    <path
+                                        d="M723.993033,360 C710.762252,360 700,370.765287 700,383.999801 C700,389.248451 701.692661,394.116025 704.570026,398.066947 L701.579605,406.983798 L710.804449,404.035539 C714.598605,406.546975 719.126434,408 724.006967,408 C737.237748,408 748,397.234315 748,384.000199 C748,370.765685 737.237748,360.000398 724.006967,360.000398 L723.993033,360.000398 L723.993033,360 Z M717.29285,372.190836 C716.827488,371.07628 716.474784,371.034071 715.769774,371.005401 C715.529728,370.991464 715.262214,370.977527 714.96564,370.977527 C714.04845,370.977527 713.089462,371.245514 712.511043,371.838033 C711.806033,372.557577 710.056843,374.23638 710.056843,377.679202 C710.056843,381.122023 712.567571,384.451756 712.905944,384.917648 C713.258648,385.382743 717.800808,392.55031 724.853297,395.471492 C730.368379,397.757149 732.00491,397.545307 733.260074,397.27732 C735.093658,396.882308 737.393002,395.527239 737.971421,393.891043 C738.54984,392.25405 738.54984,390.857171 738.380255,390.560912 C738.211068,390.264652 737.745308,390.095816 737.040298,389.742615 C736.335288,389.389811 732.90737,387.696673 732.25849,387.470894 C731.623543,387.231179 731.017259,387.315995 730.537963,387.99333 C729.860819,388.938653 729.198006,389.89831 728.661785,390.476494 C728.238619,390.928051 727.547144,390.984595 726.969123,390.744481 C726.193254,390.420348 724.021298,389.657798 721.340985,387.273388 C719.267356,385.42535 717.856938,383.125756 717.448104,382.434484 C717.038871,381.729275 717.405907,381.319529 717.729948,380.938852 C718.082653,380.501232 718.421026,380.191036 718.77373,379.781688 C719.126434,379.372738 719.323884,379.160897 719.549599,378.681068 C719.789645,378.215575 719.62006,377.735746 719.450874,377.382942 C719.281687,377.030139 717.871269,373.587317 717.29285,372.190836 Z"
+                                        id="Whatsapp">
+
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+
+                </div>
+
+                <div class="nomeDosIcones">
+                    <p>GMAIL</p>
+                    <p>GITHUB</p>
+                    <p>WHATSAPP</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
 
 </body>
 
