@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const secoesSobre = document.querySelectorAll(".assuntos button");
 
+    const sobreMim = document.querySelector("#sobreMim");
+
     // Adiciona evento de clique a cada botão do menu
     botoes.forEach(botao => {
         botao.addEventListener("click", () => {
@@ -27,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 btn.style.color = "black";
                 btn.style.border = "solid 1px black"
             });
+            
 
             // Adiciona a classe 'active' ao botão clicado e aplica o estilo de fundo
             botao.classList.add("active");
@@ -56,6 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
             switch (botao.id) {
                 case "botaoSobre":
                     texto.textContent = "1";
+                    sobreMim.style.backgroundColor = "#151519";
+                    sobreMim.style.color = "white";
+                    sobreMim.style.border = "solid 1px wheat";
                     break
             }
         });
@@ -71,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 subBtn.style.border = "solid 1px black"
             })
 
+            
             botaoSecoesSobre.style.backgroundColor = "#151519";
             botaoSecoesSobre.style.color = "white";
             botaoSecoesSobre.style.border = "solid 1px wheat";
