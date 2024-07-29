@@ -1,83 +1,58 @@
-
-
 * {
     padding: 0;
-
     box-sizing: border-box;
-
     margin: 0;
 }
 
-
-
 .container-grid {
-
     width: 1080px;
-
     max-width: 1400px;
-
     margin: 60px auto 0px auto;
-
-    
 }
 
 #navegacao {
-
     display: flex;
-
     justify-content: center;
-    
 }
 
 .menu {
     width: 860px;
-
     display: flex;
-
     justify-content: space-between;
-    
 }
 
-#botaoSobre,#botaoPortfolio,#botaoContato {
-    background-color: white;
-
+#botaoSobre, #botaoPortfolio, #botaoContato {
     border: solid 1px black;
-
     width: 28%;
-
     height: 50px;
-
     font-size: 16px;
-
     font-family: "Oswald", sans-serif;
-
-    transition: 750ms;
+    transition: 500ms;
+    background-color: transparent;
+    color: black;
 }
 
-#botaoSobre:hover,#botaoPortfolio:hover,#botaoContato:hover,#sobreMim:hover,#hobbies:hover,#objetivos:hover {
+/* Adicione esta classe */
+.active, #botaoSobre:hover, #botaoPortfolio:hover, #botaoContato:hover {
     background-color: #151519;
-
-    border: solid 1px wheat;
-
+    border: solid 1px white;
     color: white;
-
     font-size: 16px;
-
     animation: letrasEspaco 750ms ease normal;
-
     letter-spacing: 10px;
-
 }
 
-#sobreMim:hover,#hobbies:hover,#objetivos:hover {
+#sobreMim:hover, #hobbies:hover, #objetivos:hover {
     border: solid 1px black;
+    background-color: #151519;
+    color: white;
+    border: wheat;
 }
 
 @keyframes letrasEspaco {
     0% {
         letter-spacing: 0px;
     }
-
     100% {
         letter-spacing: 10px;
     }
@@ -95,27 +70,17 @@
     border-radius: 0px 20px 20px 0px;
 }
 
-/* LEMBRA DE COLOCAR OS DETALHES NA BARRA DE NAVEGAÇÃO*/
-
 #caixa-conteudo {
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
 }
 
 .titulos {
-
     width: 800px;
-
     display: flex;
-
     flex-direction: column;
-    
     align-items: center;
-
     font-family: "Oswald", sans-serif;
 }
 
@@ -128,39 +93,27 @@
 }
 
 .conteudo {
-
     width: 800px;
-
     height: 300px;
-
     margin: 60px auto;
 }
 
-
-.sobre,.projetos {
+.sobre, .projetos {
     height: 300px;
-
     font-family: "Oswald", sans-serif;
 }
 
 .assuntos {
     height: 50px;
-
     display: flex;
-
     justify-content: space-around;
-    
 }
 
-#sobreMim,#hobbies,#objetivos {
+#sobreMim, #hobbies, #objetivos {
     background-color: white;
-
     border: solid 1px black;
-
     width: 33.33333333333%;
-
     font-family: "Oswald", sans-serif;
-
     transition: 750ms;
 }
 
@@ -170,40 +123,27 @@
 
 #objetivos {
     border-radius: 0px 20px 0px 0px;
-
     width: 34.33333333333%;
 }
 
-
 .texto {
     height: 250px;
-
     border: solid 1px black;
-
     border-radius: 0px 0px 20px 20px;
-
     font-size: 18px;
-
     padding: 10px;
-
     line-height: 28px;
-
     text-align: justify;
 }
 
 .projetos {
     display: flex;
-
     justify-content: space-between;
-
 }
 
-.imagemProjetos,.textoProjetos {
-
+.imagemProjetos, .textoProjetos {
     height: 300px;
-
     border: 1px solid black;
-
     border-radius: 20px;
 }
 
@@ -213,66 +153,47 @@
 
 .textoProjetos {
     width: 500px;
-
     font-size: 18px;
-
     padding: 10px;
-
     line-height: 28px;
-
     text-align: justify;
 }
 
 .meuContato {
     width: 800px;
-
     height: 300px;
 }
 
 .iconesContatos {
     display: flex;
-
     justify-content: space-around;
 }
 
 .iconesContatos a {
     width: 125px;
-
     height: 125px;
-
     border: 4px solid black;
-
     border-radius: 50%;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 }
 
 .iconesContatos svg {
     width: 100px;
-
     height: 100px;
-
     border-radius: 50px;
 }
 
 .nomeDosIcones {
     width: 800px;
-
     display: flex;
-
     justify-content: space-around;
-
     margin-top: 10px;
 }
 
 .nomeDosIcones p {
     width: 104px;
-
     text-align: center;
-
     font-family: "Oswald", sans-serif;
 }
